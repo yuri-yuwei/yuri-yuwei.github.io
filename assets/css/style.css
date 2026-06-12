@@ -1458,3 +1458,86 @@ html.zh h3[data-lang="zh"] { display: block; }
   }
 }
 
+/* --- Skills & Certificates section --- */
+
+.skills-certificates {
+  margin-bottom: 42px;
+}
+
+.skill-block {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #d9e1ec;
+}
+
+.skill-block:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.skill-block h3 {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.skill-block p {
+  color: var(--muted);
+  line-height: 1.72;
+  margin: 0 0 12px;
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.cert-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 14px;
+  border: 1px solid #dce6f3;
+  border-radius: 14px;
+  background: #f8fbff;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.cert-year {
+  flex-shrink: 0;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.skill-tags span {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #c8d7eb;
+  border-radius: 999px;
+  padding: 6px 11px;
+  background: #ffffff;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+@media (max-width: 720px) {
+  .cert-list li {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
