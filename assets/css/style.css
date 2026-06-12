@@ -1124,4 +1124,67 @@ html.zh h3[data-lang="zh"] { display: block; }
 }
 
 
+/* --- Talks page: event-first layout, citation hierarchy, light-blue author highlight --- */
+
+.author-me {
+  color: #4f9cf9;
+  font-weight: 850;
+}
+
+.event-name {
+  color: var(--text);
+  font-size: 1.22rem;
+  font-weight: 850;
+  line-height: 1.32;
+  margin-bottom: 4px;
+}
+
+.event-meta {
+  color: var(--accent-2);
+  font-size: 0.92rem;
+  font-weight: 750;
+  margin-bottom: 10px;
+}
+
+.talk-citation {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.58;
+  margin: 8px 0 12px;
+}
+
+.talk-abstract {
+  margin-top: 14px;
+  padding: 15px 17px;
+  border-left: 4px solid #4f9cf9;
+  background: #f4f8ff;
+  border-radius: 14px;
+}
+
+.talk-abstract p {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.68;
+  margin: 8px 0 0;
+}
+
+.abstract-label {
+  color: var(--accent);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 850;
+}
+
+.talk-content .link-row {
+  margin-top: 14px;
+}
+
+.talk-card.no-media {
+  padding: 22px 24px;
+}
+
+.talk-card.no-media + .talk-card.no-media {
+  margin-top: 12px;
+}
 
