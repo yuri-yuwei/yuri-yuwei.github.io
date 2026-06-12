@@ -1330,4 +1330,131 @@ html.zh h3[data-lang="zh"] { display: block; }
 }
 
 
+/* --- Awards page: unified honors and competition timeline --- */
+
+.award-timeline {
+  position: relative;
+  display: grid;
+  gap: 22px;
+  margin-top: 28px;
+  margin-left: 8px;
+  padding-left: 34px;
+}
+
+.award-timeline::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: #c9d6e8;
+}
+
+.award-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.award-item::before {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--navy);
+  box-shadow: 0 0 0 5px #e7eef8;
+}
+
+.award-year {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e7eef8;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+}
+
+.award-card {
+  background: #ffffff;
+  border: 1px solid #dce6f3;
+  border-radius: 18px;
+  box-shadow: 0 12px 34px rgba(6, 26, 48, 0.07);
+  padding: 21px 24px 22px;
+}
+
+.award-card h3 {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 1.12rem;
+  line-height: 1.36;
+}
+
+.award-org {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.award-proof-row {
+  margin-top: 14px;
+}
+
+.award-proof-row .mini-link {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #c8d7eb;
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: #ffffff;
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.award-proof-row .mini-link:hover {
+  background: #f4f8ff;
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  .award-timeline {
+    margin-left: 0;
+    padding-left: 24px;
+  }
+
+  .award-timeline::before {
+    left: 6px;
+  }
+
+  .award-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .award-item::before {
+    left: -27px;
+  }
+
+  .award-card {
+    padding: 19px 20px 21px;
+  }
+
+  .award-year {
+    justify-self: start;
+  }
+}
 
