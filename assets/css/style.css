@@ -1188,7 +1188,7 @@ html.zh h3[data-lang="zh"] { display: block; }
   margin-top: 12px;
 }
 
-```css
+
 /* --- Move abstracts below media + citation area on talks page --- */
 
 .talk-card.has-abstract {
@@ -1266,5 +1266,68 @@ html.zh h3[data-lang="zh"] { display: block; }
     grid-row: 3;
   }
 }
-```
+
+
+/* --- FIX: make talk abstracts span full card width --- */
+
+.talk-card.has-abstract {
+  display: grid !important;
+  grid-template-columns: minmax(260px, 38%) 1fr !important;
+  grid-template-areas:
+    "media content"
+    "abstract abstract" !important;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.talk-card.has-abstract .talk-media-link {
+  grid-area: media !important;
+  min-height: 230px;
+  border-right: 1px solid #d9e1ec;
+  border-bottom: 1px solid #d9e1ec;
+}
+
+.talk-card.has-abstract .talk-content {
+  grid-area: content !important;
+  padding: 22px 26px;
+}
+
+.talk-card.has-abstract .talk-abstract {
+  grid-area: abstract !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 22px 28px 26px !important;
+  border-left: 0 !important;
+  border-top: 1px solid #d9e1ec !important;
+  border-radius: 0 !important;
+  background: #f4f8ff;
+  box-sizing: border-box;
+}
+
+.talk-card.has-abstract .talk-abstract p {
+  max-width: none !important;
+  width: 100% !important;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.72;
+  margin: 8px 0 0;
+}
+
+/* Only stack on genuinely small screens */
+@media (max-width: 640px) {
+  .talk-card.has-abstract {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "media"
+      "content"
+      "abstract" !important;
+  }
+
+  .talk-card.has-abstract .talk-media-link {
+    border-right: 0;
+  }
+}
+
+
 
