@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV | Yu Wei</title>
+  <meta name="description" content="CV page of Yu Wei.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/language.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">Yu Wei</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html"><span data-lang="en">Home</span><span data-lang="zh">首页</span></a>
+        <a href="research.html"><span data-lang="en">Research</span><span data-lang="zh">研究方向</span></a>
+        <a href="publications.html"><span data-lang="en">Publications</span><span data-lang="zh">论文</span></a>
+        <a href="talks.html"><span data-lang="en">Talks & Posters</span><span data-lang="zh">报告与海报</span></a>
+        <a href="awards.html"><span data-lang="en">Awards</span><span data-lang="zh">获奖</span></a>
+        <a class="active" href="cv.html">CV</a>
+        <a href="photos.html"><span data-lang="en">Photos</span><span data-lang="zh">照片</span></a>
+        <button class="lang-toggle" type="button" data-language-toggle>中文</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="kicker">Curriculum Vitae</div>
+      <h1>CV</h1>
+      <p class="subtitle" data-lang="en">This page is designed as a public-facing summary. To add a downloadable PDF, place your file at <code>assets/files/YuWei_CV.pdf</code> and uncomment the download link in this page.</p>
+      <p class="subtitle" data-lang="zh">这一页是公开展示版简历摘要。如果需要添加可下载 PDF，请把文件放到 <code>assets/files/YuWei_CV.pdf</code>，并在本页代码中打开下载链接。</p>
+      <!-- After adding assets/files/YuWei_CV.pdf, you can use this button:
+      <div class="button-row"><a class="btn primary" href="assets/files/YuWei_CV.pdf">Download CV</a></div>
+      -->
+    </section>
+
+    <section>
+      <h2 data-lang="en">Education</h2>
+      <h2 data-lang="zh">教育经历</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2024–present</div>
+          <div class="timeline-title" data-lang="en">Ph.D. Student in Environment, Duke University</div>
+          <div class="timeline-title" data-lang="zh">杜克大学，环境方向，博士阶段</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2023–2024</div>
+          <div class="timeline-title" data-lang="en">Ph.D. Student in Forest Resources, Penn State University</div>
+          <div class="timeline-title" data-lang="zh">宾夕法尼亚州立大学，森林资源方向，博士阶段</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2020–2023</div>
+          <div class="timeline-title" data-lang="en">M.Sc. in Photogrammetry and Remote Sensing, Wuhan University</div>
+          <div class="timeline-title" data-lang="zh">武汉大学，摄影测量与遥感，硕士</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2016–2020</div>
+          <div class="timeline-title" data-lang="en">B.Eng. in Remote Sensing Science and Technology, Wuhan University</div>
+          <div class="timeline-title" data-lang="zh">武汉大学，遥感科学与技术，本科</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-lang="en">Research interests</h2>
+      <h2 data-lang="zh">研究兴趣</h2>
+      <div class="grid-2">
+        <div class="card"><h3>Biodiversity Remote Sensing</h3><p>Imaging spectroscopy, spectral diversity, phylogenetic diversity, and functional diversity.</p></div>
+        <div class="card"><h3>Forest Structure & Function</h3><p>LiDAR/TLS, canopy structure, phenology, productivity, and ecosystem function.</p></div>
+        <div class="card"><h3>Geospatial Positioning</h3><p>ICESat-2/ATLAS, laser control points, satellite imagery, and photogrammetry.</p></div>
+        <div class="card"><h3>Ecological Data Science</h3><p>Statistical modeling, spatial analysis, remote sensing workflows, R, Python, and GIS.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-lang="en">Selected skills</h2>
+      <h2 data-lang="zh">技能概览</h2>
+      <ul class="tag-list">
+        <li>Python</li><li>R</li><li>GIS</li><li>Remote sensing</li><li>Hyperspectral data</li><li>LiDAR/TLS</li><li>ENVI</li><li>Statistical modeling</li><li>Ecological data analysis</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="notice" data-lang="en">Edit this page to match your latest official CV before publishing. Avoid listing items that are not yet public unless you are comfortable sharing them.</div>
+      <div class="notice" data-lang="zh">发布前请根据最新版正式 CV 修改本页。尚未公开的内容，只有在你愿意公开时再放上去。</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Yu Wei</span>
+    <span data-lang="en">Built with GitHub Pages · Last updated: June 2026</span>
+    <span data-lang="zh">基于 GitHub Pages 搭建 · 最近更新：2026年6月</span>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
