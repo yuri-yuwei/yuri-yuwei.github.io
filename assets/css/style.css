@@ -1107,8 +1107,8 @@ html.zh h3[data-lang="zh"] { display: block; }
 /* --- Highlight my name in publication author lists --- */
 
 .author-me {
-  color: #0b4f8a;
-  font-weight: 850;
+  color: #a78bfa;
+  font-weight: 600;
 }
 
 .author-note {
@@ -1127,8 +1127,8 @@ html.zh h3[data-lang="zh"] { display: block; }
 /* --- Talks page: event-first layout, citation hierarchy, light-blue author highlight --- */
 
 .author-me {
-  color: #4f9cf9;
-  font-weight: 850;
+  color: #a78bfa;
+  font-weight: 600;
 }
 
 .event-name {
