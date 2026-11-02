@@ -4,24 +4,81 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yu Wei | Environmental Remote Sensing</title>
-  <meta name="description" content="Yu Wei academic website: environmental remote sensing, biodiversity, imaging spectroscopy, LiDAR, forest ecosystems, and photogrammetry.">
+  <meta name="description" content="Yu Wei academic website: hyperspectral remote sensing, LiDAR, biodiversity, ecosystem functions, and AI applications in environmental research.">
+
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/language.js" defer></script>
+
+  <style>
+    /* Show only the selected language, including before JavaScript loads. */
+    html[lang="en"] [data-lang="zh"],
+    html[lang="zh"] [data-lang="en"] {
+      display: none !important;
+    }
+
+    html[lang="en"] [data-lang="en"],
+    html[lang="zh"] [data-lang="zh"] {
+      display: revert !important;
+    }
+
+    /* Emphasize the main research interest. */
+    .tag-list .tag-highlight {
+      background-color: #e1f1ea;
+      color: #174a3b;
+      border: 1px solid #75a990;
+      font-weight: 700;
+    }
+  </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="nav-wrap">
       <a class="brand" href="index.html">Yu Wei</a>
+
       <nav class="nav-links" aria-label="Primary navigation">
-        <a class="active" href="index.html"><span data-lang="en">Home</span><span data-lang="zh">首页</span></a>
-        <a href="research.html"><span data-lang="en">Research</span><span data-lang="zh">研究方向</span></a>
-        <a href="publications.html"><span data-lang="en">Publications</span><span data-lang="zh">论文</span></a>
-        <a href="talks.html"><span data-lang="en">Talks & Posters</span><span data-lang="zh">报告与海报</span></a>
-        <a href="awards.html"><span data-lang="en">Awards</span><span data-lang="zh">获奖</span></a>
-        <a href="skills.html"><span data-lang="en">Skills</span><span data-lang="zh">技能</span></a>
+        <a class="active" href="index.html">
+          <span data-lang="en">Home</span>
+          <span data-lang="zh">首页</span>
+        </a>
+
+        <a href="research.html">
+          <span data-lang="en">Research</span>
+          <span data-lang="zh">研究方向</span>
+        </a>
+
+        <a href="publications.html">
+          <span data-lang="en">Publications</span>
+          <span data-lang="zh">论文</span>
+        </a>
+
+        <a href="talks.html">
+          <span data-lang="en">Talks &amp; Posters</span>
+          <span data-lang="zh">报告与海报</span>
+        </a>
+
+        <a href="awards.html">
+          <span data-lang="en">Awards</span>
+          <span data-lang="zh">获奖</span>
+        </a>
+
+        <a href="skills.html">
+          <span data-lang="en">Skills</span>
+          <span data-lang="zh">技能</span>
+        </a>
+
         <a href="cv.html">CV</a>
-        <a href="photos.html"><span data-lang="en">Photos</span><span data-lang="zh">照片</span></a>
-        <button class="lang-toggle" type="button" data-language-toggle>中文</button>
+
+        <a href="photos.html">
+          <span data-lang="en">Photos</span>
+          <span data-lang="zh">照片</span>
+        </a>
+
+        <button
+          class="lang-toggle"
+          type="button"
+          data-language-toggle
+          aria-label="切换到中文"
+        >中文</button>
       </nav>
     </div>
   </header>
@@ -29,215 +86,487 @@
   <main>
     <section class="hero">
       <div class="hero-card">
-        <div class="kicker" data-lang="en">Environmental remote sensing</div>
-        <div class="kicker" data-lang="zh">环境遥感 · 森林生态 · 生物多样性</div>
+        <div class="kicker" data-lang="en">
+          Environmental remote sensing
+        </div>
+        <div class="kicker" data-lang="zh">
+          环境遥感 · 森林生态 · 生物多样性
+        </div>
+
         <h1>Yu Wei</h1>
-        <p class="subtitle" data-lang="en">I develop remote sensing approaches for monitoring forest biodiversity and ecosystem function across scales, linking field observations with airborne imaging spectroscopy, LiDAR/TLS, and satellite products such as EMIT and GEDI.</p>
-        <p class="subtitle" data-lang="zh">我的研究关注如何利用地面生态观测、机载成像光谱、LiDAR/TLS 以及 EMIT、GEDI 等卫星产品，跨尺度监测森林生物多样性与生态系统功能。</p>
+
+        <p class="subtitle" data-lang="en">
+          I use <strong>hyperspectral remote sensing</strong> and LiDAR data
+          to monitor biodiversity and ecosystem functions, and explore
+          AI applications in environmental research.
+        </p>
+        <p class="subtitle" data-lang="zh">
+          我利用<strong>高光谱遥感</strong>与 LiDAR 数据监测生物多样性和生态系统功能，
+          并探索人工智能在环境研究中的应用。
+        </p>
+
         <ul class="tag-list">
-          <li>Biodiversity Remote Sensing</li>
-          <li>Imaging Spectroscopy</li>
+          <li class="tag-highlight">Hyperspectral Remote Sensing</li>
           <li>LiDAR</li>
-          <li>Forest Ecosystems</li>
+          <li>Biodiversity Remote Sensing</li>
+          <li>Ecosystem Functions</li>
           <li>Photogrammetry</li>
-          <li>Artificial Intelligence</li>
+          <li>AI for Environmental Research</li>
         </ul>
+
         <div class="button-row">
           <a class="btn primary" href="cv.html">CV</a>
-          <a class="btn" href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=TXt2A0kAAAAJ&gmla=ACrTK9VvQ-kwwKFlws4cNodBIOLN2UEH8RwdOVvWnGmJT-XGql6y79Qq88NkaGDAsF8CRapXky7pC4OlZDYAz9AXnV3YLmIziG0u" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="btn" href="publications.html"><span data-lang="en">Publications</span><span data-lang="zh">论文列表</span></a>
-          <a class="btn" href="talks.html"><span data-lang="en">Talks & Posters</span><span data-lang="zh">报告与海报</span></a>
-          <a class="btn" href="photos.html"><span data-lang="en">Photos</span><span data-lang="zh">照片</span></a>
+
+          <a
+            class="btn"
+            href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=TXt2A0kAAAAJ&amp;gmla=ACrTK9VvQ-kwwKFlws4cNodBIOLN2UEH8RwdOVvWnGmJT-XGql6y79Qq88NkaGDAsF8CRapXky7pC4OlZDYAz9AXnV3YLmIziG0u"
+            target="_blank"
+            rel="noopener"
+          >Google Scholar</a>
+
+          <a class="btn" href="publications.html">
+            <span data-lang="en">Publications</span>
+            <span data-lang="zh">论文列表</span>
+          </a>
+
+          <a class="btn" href="talks.html">
+            <span data-lang="en">Talks &amp; Posters</span>
+            <span data-lang="zh">报告与海报</span>
+          </a>
+
+          <a class="btn" href="photos.html">
+            <span data-lang="en">Photos</span>
+            <span data-lang="zh">照片</span>
+          </a>
+
           <a class="btn" href="mailto:ywei.eco@gmail.com">Email</a>
         </div>
       </div>
+
       <aside class="side-card">
-      <h3 data-lang="en">Scientific focus</h3>
-      <h3 data-lang="zh">科学问题</h3>
-      <p data-lang="en">How can remotely sensed spectral and structural metrics be used to characterize plant biodiversity, scale biodiversity mapping from field plots to landscapes and satellites, and evaluate biodiversity–ecosystem function relationships under changing climate conditions?</p>
-      <p data-lang="zh">如何利用遥感获取的光谱和结构指标刻画植物多样性，将生物多样性监测从样地扩展到景观和卫星尺度，并进一步评估气候变化背景下生物多样性与生态系统功能之间的关系？</p>
-    
-      <h3 data-lang="en">Approach</h3>
-      <h3 data-lang="zh">研究方法</h3>
-      <p data-lang="en">I combine NEON field observations, airborne hyperspectral imagery, LiDAR/TLS point clouds, satellite observations, biodiversity metrics, and statistical modeling.</p>
-      <p data-lang="zh">我结合 NEON 地面观测、机载高光谱影像、LiDAR/TLS 点云、卫星观测、生物多样性指标和统计建模方法开展研究。</p>
-    </aside>
+        <h3 data-lang="en">Scientific focus</h3>
+        <h3 data-lang="zh">科学问题</h3>
+
+        <p data-lang="en">
+          How can remotely sensed spectral and structural metrics be used to
+          characterize plant biodiversity, scale biodiversity mapping from
+          field plots to landscapes and satellites, and evaluate
+          biodiversity–ecosystem function relationships under changing
+          climate conditions?
+        </p>
+        <p data-lang="zh">
+          如何利用遥感获取的光谱和结构指标刻画植物多样性，
+          将生物多样性监测从样地扩展到景观和卫星尺度，
+          并进一步评估气候变化背景下生物多样性与生态系统功能之间的关系？
+        </p>
+
+        <h3 data-lang="en">Approach</h3>
+        <h3 data-lang="zh">研究方法</h3>
+
+        <p data-lang="en">
+          I combine NEON field observations, airborne hyperspectral imagery,
+          LiDAR/TLS point clouds, satellite observations, biodiversity
+          metrics, and statistical modeling.
+        </p>
+        <p data-lang="zh">
+          我结合 NEON 地面观测、机载高光谱影像、LiDAR/TLS 点云、
+          卫星观测、生物多样性指标和统计建模方法开展研究。
+        </p>
+      </aside>
     </section>
 
-    
     <section>
       <h2 data-lang="en">Academic timeline</h2>
       <h2 data-lang="zh">学术经历</h2>
-      <p class="section-intro" data-lang="en">A concise overview of my academic path from remote sensing and photogrammetry to forest ecology and environmental remote sensing.</p>
-      <p class="section-intro" data-lang="zh">以下时间线展示了我从遥感与摄影测量到森林生态与环境遥感方向的学术路径。</p>
+
+      <p class="section-intro" data-lang="en">
+        A concise overview of my academic path from remote sensing and
+        photogrammetry to forest ecology and environmental remote sensing.
+      </p>
+      <p class="section-intro" data-lang="zh">
+        以下时间线展示了我从遥感与摄影测量到森林生态与环境遥感方向的学术路径。
+      </p>
+
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-year">2016–2020</div>
-          <div class="timeline-title" data-lang="en">B.Eng. in Remote Sensing Science and Technology, Wuhan University</div>
-          <div class="timeline-title" data-lang="zh">武汉大学 · 遥感科学与技术 · 本科</div>
-          <p class="timeline-text" data-lang="en">Training in photogrammetry, remote sensing, GIS, and geospatial data analysis.</p>
-          <p class="timeline-text" data-lang="zh">系统学习摄影测量、遥感、GIS 与空间数据分析。</p>
+
+          <div class="timeline-title" data-lang="en">
+            B.Eng. in Remote Sensing Science and Technology, Wuhan University
+          </div>
+          <div class="timeline-title" data-lang="zh">
+            武汉大学 · 遥感科学与技术 · 本科
+          </div>
+
+          <p class="timeline-text" data-lang="en">
+            Training in photogrammetry, remote sensing, GIS, and geospatial
+            data analysis.
+          </p>
+          <p class="timeline-text" data-lang="zh">
+            系统学习摄影测量、遥感、GIS 与空间数据分析。
+          </p>
         </div>
+
         <div class="timeline-item">
           <div class="timeline-year">2020–2023</div>
-          <div class="timeline-title" data-lang="en">M.Sc. in Photogrammetry and Remote Sensing, Wuhan University</div>
-          <div class="timeline-title" data-lang="zh">武汉大学 · 摄影测量与遥感 · 硕士|教学助理</div>
-          <p class="timeline-text" data-lang="en">Research on ICESat-2/ATLAS laser control points, global elevation control databases, and block-adjustment positioning.</p>
-          <p class="timeline-text" data-lang="zh">研究 ICESat-2/ATLAS 星载激光控制点提取、全球高程控制点数据库构建与辅助区域网平差定位（详情见论文）。</p>
+
+          <div class="timeline-title" data-lang="en">
+            M.Sc. in Photogrammetry and Remote Sensing, Wuhan University
+          </div>
+          <div class="timeline-title" data-lang="zh">
+            武汉大学 · 摄影测量与遥感 · 硕士|教学助理
+          </div>
+
+          <p class="timeline-text" data-lang="en">
+            Research on ICESat-2/ATLAS laser control points, global elevation
+            control databases, and block-adjustment positioning.
+          </p>
+          <p class="timeline-text" data-lang="zh">
+            研究 ICESat-2/ATLAS 星载激光控制点提取、全球高程控制点数据库构建
+            与辅助区域网平差定位（详情见论文）。
+          </p>
         </div>
+
         <div class="timeline-item">
           <div class="timeline-year">2023–2024</div>
-          <div class="timeline-title" data-lang="en">Ph.D. Student (serving as Research Assistant) in Forest Resources, Penn State University</div>
-          <div class="timeline-title" data-lang="zh">宾夕法尼亚州立大学 · 森林资源方向 · 博士|研究助理</div>
-          <p class="timeline-text" data-lang="en">Shifted toward forest ecology, biodiversity monitoring, and remote sensing applications in ecosystem studies.</p>
-          <p class="timeline-text" data-lang="zh">研究方向转向森林监测、植被生物多样性监测、AI+遥感、森林生态系统的遥感检测应用等。</p>
+
+          <div class="timeline-title" data-lang="en">
+            Ph.D. Student (serving as Research Assistant) in Forest Resources,
+            Penn State University
+          </div>
+          <div class="timeline-title" data-lang="zh">
+            宾夕法尼亚州立大学 · 森林资源方向 · 博士|研究助理
+          </div>
+
+          <p class="timeline-text" data-lang="en">
+            Shifted toward forest ecology, biodiversity monitoring, and
+            remote sensing applications in ecosystem studies.
+          </p>
+          <p class="timeline-text" data-lang="zh">
+            研究方向转向森林监测、植被生物多样性监测、AI+遥感、
+            森林生态系统的遥感检测应用等。
+          </p>
         </div>
+
         <div class="timeline-item">
           <div class="timeline-year">2024–2026</div>
-          <div class="timeline-title" data-lang="en">Ph.D. Student (serving as Research Assistant & Teaching Assistant) in Environment, Duke University</div>
-          <div class="timeline-title" data-lang="zh">杜克大学 · 环境方向 · 博士|研究助理|教学助理</div>
-          <p class="timeline-text" data-lang="en">Research on imaging spectroscopy, airbonre LiDAR, TLS，canopy structure, phenology, biodiversity, and ecosystem function.</p>
-          <p class="timeline-text" data-lang="zh">围绕成像光谱、机载LiDAR、地基激光雷达、森林冠层结构、物候、生物多样性与生态系统功能开展研究。</p>
+
+          <div class="timeline-title" data-lang="en">
+            Ph.D. Student (serving as Research Assistant &amp; Teaching
+            Assistant) in Environment, Duke University
+          </div>
+          <div class="timeline-title" data-lang="zh">
+            杜克大学 · 环境方向 · 博士|研究助理|教学助理
+          </div>
+
+          <p class="timeline-text" data-lang="en">
+            Research on imaging spectroscopy, airborne LiDAR, TLS, canopy
+            structure, phenology, biodiversity, and ecosystem function.
+          </p>
+          <p class="timeline-text" data-lang="zh">
+            围绕成像光谱、机载 LiDAR、地基激光雷达、森林冠层结构、
+            物候、生物多样性与生态系统功能开展研究。
+          </p>
         </div>
       </div>
     </section>
 
-  <section class="card skills-certificates">
+    <section class="card skills-certificates">
+      <h2 data-lang="en">Skills</h2>
+      <h2 data-lang="zh">技能</h2>
 
-  <h2 data-lang="en">Skills</h2>
-  <h2 data-lang="zh">技能</h2>
+      <div class="skill-block">
+        <h3 data-lang="en">Languages</h3>
+        <h3 data-lang="zh">语言能力</h3>
 
-  <div class="skill-block">
-    <h3 data-lang="en">Languages</h3>
-    <h3 data-lang="zh">语言能力</h3>
+        <p data-lang="en">
+          Mandarin Chinese (native) and English (fluent)
+        </p>
+        <p data-lang="zh">
+          汉语（母语，普通话水平测试二级甲等证书）；英语（流利，雅思7.5）
+        </p>
+      </div>
 
-    <p data-lang="en">
-      Mandarin Chinese (native) and English (fluent)
+      <div class="skill-block">
+        <h3 data-lang="en">Programming</h3>
+        <h3 data-lang="zh">编程</h3>
 
-    <p data-lang="zh">
-      汉语（母语，普通话水平测试二级甲等证书）；英语（流利，雅思7.5）
-    </p>
+        <p data-lang="en">
+          R, MATLAB, Python (PyTorch and GeoPandas), C, C++, Google Earth Engine
+        </p>
+        <p data-lang="zh">
+          R、MATLAB、Python（PyTorch 和 GeoPandas）、C、C++、Google Earth Engine
+        </p>
+      </div>
 
-  <div class="skill-block">
-    <h3 data-lang="en">Programming</h3>
-    <h3 data-lang="zh">编程</h3>
+      <div class="skill-block">
+        <h3 data-lang="en">Software</h3>
+        <h3 data-lang="zh">专业软件</h3>
 
-   <p data-lang="en">
-      R, MATLAB, Python (Pytorch and Geopandas), C, C++, Google Earth Engine, etc.
-    </p>
-       <p data-lang="cn">
-      R, MATLAB, Python (Pytorch and Geopandas), C, C++, Google Earth Engine, etc.
-    </p>
-    
-  <div class="skill-block">
-    <h3 data-lang="en">Software</h3>
-    <h3 data-lang="zh">专业软件</h3>
-
-    <p data-lang="en">
-      ArcGIS, ENVI, EDARS, SAS Studio, SPSS etc.
-    </p>
-       <p data-lang="cn">
-      ArcGIS, ENVI, EDARS, SAS Studio, SPSS etc.
-    </p>
-  </div>
-
-  <div class="skill-block">
-    <h3 data-lang="en">Fieldwork</h3>
-    <h3 data-lang="zh">田野调查</h3>
-
-    <p data-lang="en">
-      I have hands-on experience in ecological fieldwork, including forest biodiversity and regeneration sampling. I enjoy field-based ecological research and value the connection between direct ecological observation and remote sensing analysis.
-    </p>
-
-    <p data-lang="zh">
-      我具有生态学田野调查经验，包括森林生物多样性调查与森林再生采样工作。我很享受田野工作。
-    </p>
-  </div>
-</section>
+        <p data-lang="en">
+          ArcGIS, ENVI, ERDAS, SAS Studio, SPSS
+        </p>
+        <p data-lang="zh">
+          ArcGIS、ENVI、ERDAS、SAS Studio、SPSS
+        </p>
+      </div>
+    </section>
 
     <section>
       <h2 class="home-themes-title" data-lang="en">Research themes</h2>
-<h2 class="home-themes-title" data-lang="zh">主要研究主题</h2>
+      <h2 class="home-themes-title" data-lang="zh">主要研究主题</h2>
 
-<p class="section-intro" data-lang="en">My research uses remote sensing to measure biodiversity as a multidimensional ecological property, linking spectral variation, forest structure, functional traits, ecosystem function, and satellite-based geospatial positioning across scales.</p>
-<p class="section-intro" data-lang="zh">我的研究利用遥感方法刻画多维度生物多样性，并将光谱变化、森林结构、功能性状、生态系统功能以及星载遥感定位方法联系起来。</p>
+      <p class="section-intro" data-lang="en">
+        My research uses remote sensing to measure biodiversity as a
+        multidimensional ecological property, linking spectral variation,
+        forest structure, functional traits, ecosystem function, and
+        satellite-based geospatial positioning across scales.
+      </p>
+      <p class="section-intro" data-lang="zh">
+        我的研究利用遥感方法刻画多维度生物多样性，并将光谱变化、森林结构、
+        功能性状、生态系统功能以及星载遥感定位方法联系起来。
+      </p>
 
-<div class="theme-grid">
-  <article class="theme-card featured">
-    <a class="theme-media-link" href="assets/img/research-biodiversity.svg" target="_blank" rel="noopener">
-      <img class="theme-media" src="assets/img/research-biodiversity.svg" alt="Biodiversity remote sensing figure">
-    </a>
-    <div class="theme-body">
-      <div class="theme-number">Theme 01</div>
-      <h3 class="theme-title" data-lang="en">Biodiversity Remote Sensing</h3>
-      <h3 class="theme-title" data-lang="zh">生物多样性遥感</h3>
-      <p data-lang="en">I examine how imaging spectroscopy and spectral diversity metrics capture taxonomic, phylogenetic, and functional dimensions of plant biodiversity across NEON biomes, and how climate and vegetation context mediate the spectral diversity–biodiversity relationship.</p>
-      <p data-lang="zh">我研究成像光谱和光谱多样性指标如何刻画植物分类、系统发育和功能多样性，并分析气候和植被类型如何影响光谱多样性—生物多样性关系。</p>
-      <div class="link-row">
-        <a class="mini-link" href="research.html">Read more</a>
-        <a class="mini-link" href="assets/files/esa-slides.pdf" target="_blank" rel="noopener">Representative slides</a>
+      <div class="theme-grid">
+        <article class="theme-card featured">
+          <a
+            class="theme-media-link"
+            href="assets/img/research-biodiversity.svg"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="theme-media"
+              src="assets/img/research-biodiversity.svg"
+              alt="Biodiversity remote sensing figure"
+            >
+          </a>
+
+          <div class="theme-body">
+            <div class="theme-number">Theme 01</div>
+
+            <h3 class="theme-title" data-lang="en">
+              Biodiversity Remote Sensing
+            </h3>
+            <h3 class="theme-title" data-lang="zh">
+              生物多样性遥感
+            </h3>
+
+            <p data-lang="en">
+              I examine how imaging spectroscopy and spectral diversity
+              metrics capture taxonomic, phylogenetic, and functional
+              dimensions of plant biodiversity across NEON biomes, and how
+              climate and vegetation context mediate the spectral
+              diversity–biodiversity relationship.
+            </p>
+            <p data-lang="zh">
+              我研究成像光谱和光谱多样性指标如何刻画植物分类、系统发育和功能多样性，
+              并分析气候和植被类型如何影响光谱多样性—生物多样性关系。
+            </p>
+
+            <div class="link-row">
+              <a class="mini-link" href="research.html">Read more</a>
+              <a
+                class="mini-link"
+                href="assets/files/esa-slides.pdf"
+                target="_blank"
+                rel="noopener"
+              >Representative slides</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="theme-card featured">
+          <a
+            class="theme-media-link"
+            href="assets/img/research-forest-structure.svg"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="theme-media"
+              src="assets/img/research-forest-structure.svg"
+              alt="LiDAR and forest structure figure"
+            >
+          </a>
+
+          <div class="theme-body">
+            <div class="theme-number">Theme 02</div>
+
+            <h3 class="theme-title" data-lang="en">
+              LiDAR and Forest Structure
+            </h3>
+            <h3 class="theme-title" data-lang="zh">
+              LiDAR 与森林结构
+            </h3>
+
+            <p data-lang="en">
+              I use terrestrial laser scanning and airborne LiDAR to quantify
+              individual-tree and stand-level canopy structure, including
+              tree segmentation, crown architecture, canopy gaps, and
+              structural heterogeneity, with Duke Forest as an important
+              local testbed.
+            </p>
+            <p data-lang="zh">
+              我利用 TLS 和机载 LiDAR 量化单木和林分尺度的冠层结构，
+              包括单木分割、树冠结构、林窗和结构异质性，
+              并以 Duke Forest 作为重要研究样地。
+            </p>
+
+            <div class="link-row">
+              <a class="mini-link" href="research.html">Read more</a>
+              <a
+                class="mini-link"
+                href="assets/files/duke-forest-biodiversity.pdf"
+                target="_blank"
+                rel="noopener"
+              >Project description</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="theme-card featured">
+          <a
+            class="theme-media-link"
+            href="assets/img/talk-agu-2024.svg"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="theme-media"
+              src="assets/img/talk-agu-2024.svg"
+              alt="Biodiversity and ecosystem function poster"
+            >
+          </a>
+
+          <div class="theme-body">
+            <div class="theme-number">Theme 03</div>
+
+            <h3 class="theme-title" data-lang="en">
+              Biodiversity–Ecosystem Function Relationship
+            </h3>
+            <h3 class="theme-title" data-lang="zh">
+              生物多样性—生态系统功能关系
+            </h3>
+
+            <p data-lang="en">
+              I test whether remotely sensed foliar functional traits and
+              derived functional diversity metrics can explain spatial
+              variation in ecosystem functions, including gross primary
+              production, leaf area index, and coarse woody debris across
+              forest biomes.
+            </p>
+            <p data-lang="zh">
+              我研究遥感反演的叶片功能性状和功能多样性指标是否能够解释
+              生态系统功能的空间差异，包括 GPP、LAI 和粗木质残体等指标。
+            </p>
+
+            <div class="link-row">
+              <a class="mini-link" href="research.html">Read more</a>
+              <a
+                class="mini-link"
+                href="assets/files/poster-yu-final.pdf"
+                target="_blank"
+                rel="noopener"
+              >Representative poster</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="theme-card featured">
+          <a
+            class="theme-media-link"
+            href="assets/img/research-spaceborne-lidar.svg"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="theme-media"
+              src="assets/img/research-spaceborne-lidar.svg"
+              alt="Spaceborne LiDAR and photogrammetry figure"
+            >
+          </a>
+
+          <div class="theme-body">
+            <div class="theme-number">Theme 04</div>
+
+            <h3 class="theme-title" data-lang="en">
+              Spaceborne LiDAR &amp; Photogrammetry
+            </h3>
+            <h3 class="theme-title" data-lang="zh">
+              星载 LiDAR 与摄影测量
+            </h3>
+
+            <p data-lang="en">
+              I developed methods for extracting ICESat-2/ATLAS spaceborne
+              LiDAR control points and constructing a global elevation
+              control point database to support satellite stereo-image block
+              adjustment and improve elevation positioning accuracy without
+              dense ground control.
+            </p>
+            <p data-lang="zh">
+              我研究 ICESat-2/ATLAS 星载激光控制点提取和全球高程控制点数据库
+              构建方法，用于辅助光学卫星立体影像区域网平差，
+              并提升少控制或无地面控制条件下的高程定位精度。
+            </p>
+
+            <div class="link-row">
+              <a class="mini-link" href="research.html">Read more</a>
+              <a
+                class="mini-link"
+                href="assets/files/wuhan-thesis-defense.pdf"
+                target="_blank"
+                rel="noopener"
+              >Thesis defense</a>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
-  </article>
-
-  <article class="theme-card featured">
-    <a class="theme-media-link" href="assets/img/research-forest-structure.svg" target="_blank" rel="noopener">
-      <img class="theme-media" src="assets/img/research-forest-structure.svg" alt="LiDAR and forest structure figure">
-    </a>
-    <div class="theme-body">
-      <div class="theme-number">Theme 02</div>
-      <h3 class="theme-title" data-lang="en">LiDAR and Forest Structure</h3>
-      <h3 class="theme-title" data-lang="zh">LiDAR 与森林结构</h3>
-      <p data-lang="en">I use terrestrial laser scanning and airborne LiDAR to quantify individual-tree and stand-level canopy structure, including tree segmentation, crown architecture, canopy gaps, and structural heterogeneity, with Duke Forest as an important local testbed.</p>
-      <p data-lang="zh">我利用 TLS 和机载 LiDAR 量化单木和林分尺度的冠层结构，包括单木分割、树冠结构、林窗和结构异质性，并以 Duke Forest 作为重要研究样地。</p>
-      <div class="link-row">
-        <a class="mini-link" href="research.html">Read more</a>
-        <a class="mini-link" href="assets/files/duke-forest-biodiversity.pdf" target="_blank" rel="noopener">Project description</a>
-      </div>
-    </div>
-  </article>
-
-  <article class="theme-card featured">
-    <a class="theme-media-link" href="assets/img/talk-agu-2024.svg" target="_blank" rel="noopener">
-      <img class="theme-media" src="assets/img/talk-agu-2024.svg" alt="Biodiversity and ecosystem function poster">
-    </a>
-    <div class="theme-body">
-      <div class="theme-number">Theme 03</div>
-      <h3 class="theme-title" data-lang="en">Biodiversity–Ecosystem Function Relationship</h3>
-      <h3 class="theme-title" data-lang="zh">生物多样性—生态系统功能关系</h3>
-      <p data-lang="en">I test whether remotely sensed foliar functional traits and derived functional diversity metrics can explain spatial variation in ecosystem functions, including gross primary production, leaf area index, and coarse woody debris across forest biomes.</p>
-      <p data-lang="zh">我研究遥感反演的叶片功能性状和功能多样性指标是否能够解释生态系统功能的空间差异，包括 GPP、LAI 和粗木质残体等指标。</p>
-      <div class="link-row">
-        <a class="mini-link" href="research.html">Read more</a>
-        <a class="mini-link" href="assets/files/poster-yu-final.pdf" target="_blank" rel="noopener">Representative poster</a>
-      </div>
-    </div>
-  </article>
-
-  <article class="theme-card featured">
-    <a class="theme-media-link" href="assets/img/research-spaceborne-lidar.svg" target="_blank" rel="noopener">
-      <img class="theme-media" src="assets/img/research-spaceborne-lidar.svg" alt="Spaceborne LiDAR and photogrammetry figure">
-    </a>
-    <div class="theme-body">
-      <div class="theme-number">Theme 04</div>
-      <h3 class="theme-title" data-lang="en">Spaceborne LiDAR & Photogrammetry</h3>
-      <h3 class="theme-title" data-lang="zh">星载 LiDAR 与摄影测量</h3>
-      <p data-lang="en">I developed methods for extracting ICESat-2/ATLAS spaceborne LiDAR control points and constructing a global elevation control point database to support satellite stereo-image block adjustment and improve elevation positioning accuracy without dense ground control.</p>
-      <p data-lang="zh">我研究 ICESat-2/ATLAS 星载激光控制点提取和全球高程控制点数据库构建方法，用于辅助光学卫星立体影像区域网平差，并提升少控制或无地面控制条件下的高程定位精度。</p>
-      <div class="link-row">
-        <a class="mini-link" href="research.html">Read more</a>
-        <a class="mini-link" href="assets/files/wuhan-thesis-defense.pdf" target="_blank" rel="noopener">Thesis defense</a>
-      </div>
-    </div>
-  </article>
-  </div>
+    </section>
   </main>
 
   <footer class="footer">
     <span>© <span id="year">2026</span> Yu Wei</span>
-    <span data-lang="en">Built with GitHub Pages · Last updated: June 2026</span>
-    <span data-lang="zh">基于 GitHub Pages 搭建 · 最近更新：2026年6月</span>
+    <span data-lang="en">
+      Built with GitHub Pages · Last updated: November 2026
+    </span>
+    <span data-lang="zh">
+      基于 GitHub Pages 搭建 · 最近更新：2026年11月
+    </span>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>
+    (() => {
+      const languageButton = document.querySelector('[data-language-toggle]');
+      const navigation = document.querySelector('.nav-links');
+
+      function setLanguage(language) {
+        document.documentElement.lang = language;
+
+        languageButton.textContent = language === 'en' ? '中文' : 'English';
+        languageButton.setAttribute(
+          'aria-label',
+          language === 'en' ? '切换到中文' : 'Switch to English'
+        );
+
+        navigation.setAttribute(
+          'aria-label',
+          language === 'en' ? 'Primary navigation' : '主导航'
+        );
+      }
+
+      // Always open the homepage in English.
+      setLanguage('en');
+
+      languageButton.addEventListener('click', () => {
+        const nextLanguage =
+          document.documentElement.lang === 'en' ? 'zh' : 'en';
+
+        setLanguage(nextLanguage);
+      });
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
